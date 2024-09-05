@@ -115,7 +115,7 @@ def ___new_up___():
 	fbbd = 'Samsung'
 	mobile_model = f"{random.randint(4, 13)}.{random.randint(0, 5)}.{random.randint(1, 5)}"
 	modelx = random.choice(["SM-A205F","SM-A205U1","SM-N770F","SM-A057M","SM-A336E","SM-A536B","SM-S918B","SM-A705FN","SM-M022F","SM-M307F","SM-M526BR","SM-G610F"])
-	last = f"[FBAN/FB4A;FBAV/198.59.69.58;FBBV/58872150;FBDM/{density=2.4,width=1080,height=2509};FBLC/en_US;FBRV/92185173;FBCR/null;FBMF/lge;FBBD/lge;FBPN/com.facebook.katana;FBDV/LGE;FBSV/4.7;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+	last = f"[FBAN/Orca-Android;FBAV/30.0.0.759;FBPN/com.facebook.orca;FBLC/en_GB;FBBV/449696499;FBCR/Libyana;FBMF/samsung;FBBD/samsung;FBDV/SM-T805|LRX22G;FBSV/11.1.1;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.0,width=1316,height=2148};FB_FW/1;FBRV/449696499]"
 	ua = f'Dalvik/2.1.0 (Linux; U; Android {random.randint(4,13)}; {mix} Build/QP1A.{random.randint(111111,999999)}.{random.randint(111,999)}) '+last
 	return ua
 def machikney():
