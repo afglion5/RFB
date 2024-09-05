@@ -94,7 +94,7 @@ def fire():
     fbmf = ('Oppo')
     build = random.choice(['V11.0.1.0.QFGEUXM','NRD90U','N2G48H'])
     fbdv = random.choice(['CPH2321','SM-N770F','CPH1801','PCHM30','CPH1869','PENM00','CPH2629'])
-    END = f'''[FBAN/FB4A;FBAV/238.0.0.99;FBBV/250569808;FBDM/{density=1.8595664866735053,width=1035,height=2064};FBLC/en_GB;FBRV/346026217;FBCR/China Mobile;FBMF/SM-S918B;FBBD/SM-S918B;FBPN/messenger-android;FBDV/SM-S918B;FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]'''
+    ua = f'''[FBAN/FB4A;FBAV/106.27.2.47;FBBV/79748937;FBDM/{density=1.3,width=853,height=2083};FBLC/en_US;FBRV/92361181;FBCR/null;FBMF/lge;FBBD/lge;FBPN/com.facebook.katana;FBDV/LGE;FBSV/8.4;FBOP/1;FBCA/armeabi-v7a:armeabi;]'''
     ua = f'''Davik/2.1.0 (Linux; U; Android {str(fbsv)}; {str(fbdv)} Build/''' + str(build) + ') ' + END
     ua = f'''Mozilla/5.0 (Linux; Android {str(fbsv)}; {str(fbdv)} Build/''' + str(build) + ') ' + END
     ua = f'''Mozilla/3.0 (Linux; Android {str(fbsv)}; {str(fbdv)} Build/''' + str(build) + ') ' + END
