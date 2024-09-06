@@ -71,7 +71,7 @@ def approval():
      key=kns+'|'+ak[:20]
      url=f"https://github.com/afglion5/approval/blob/main/approval.txt"
      req=requests.get(url).text
-     srvr = re.findall("srver=(.*)=srver", req)[0]
+  #   srvr = re.findall("srver=(.*)=srver", req)[0]
      if 'ON' in srvr:
          os.system('clear')
          print(f"{h} TOOLS SERVER IS ON NOW !");time.sleep(0.5)
@@ -492,4 +492,3 @@ def idpaslogin2(uid,passlist,tl):
 
 #━━━━━━━━[ THE END ]━━━━━━━━#
 if __name__=='__main__':
-         approval()
