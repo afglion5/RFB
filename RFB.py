@@ -59,7 +59,7 @@ def sex():
 	density = random.choice(['2.0', '2.5', '3.0'])
 	width = random.choice(["720", "1080", "1280"])
 	height = random.choice(["720", "1080", "1280", "1440", "1920"])
-	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/170.0.0.107;FBDM/{density=3.062889781420528,width=775,height=2482};FBLC/ja_JP;FBRV/35863070 ;FBCR/AT&T;FBMF/realme;FBBD/realme;FBPN/com.facebook.katana;FBDV/SM-N770F;FBSV/11.1.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
+# 	ua = f"[FBAN/FB4A;FBAV/{str(facebook_version)};FBBV/{str(fbbv)};[FBAN/FB4A;FBAV/170.0.0.107;FBDM/{density=3.062889781420528,width=775,height=2482};FBLC/ja_JP;FBRV/35863070 ;FBCR/AT&T;FBMF/realme;FBBD/realme;FBPN/com.facebook.katana;FBDV/SM-N770F;FBSV/11.1.1;FBOP/1;FBCA/armeabi-v7a:armeabi;]"
 	return ua
 #__________________LOGO____________#
 logo=(f"""
