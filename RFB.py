@@ -29,7 +29,7 @@ kkkki = random.choice(['PQ3B.190801.002', 'PQ1A.181205.002.A1', 'G950FXXU4DSBA',
 kkkkkz = f"|{random.choice(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'])}{random.choice(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'])}{random.choice(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'])}{str(random.randrange(1,99))}{random.choice(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'])}{str(random.randrange(1,19))}{random.choice(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'])}{random.choice(['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'])}"
 modlss = kkkkki+kkkkkz
 def maxpro1():
-      ua = f'Dalvik/2.1.0 (Linux; U; Android 10; SM-N770F Build/RP1A.411926.987) [FBAN/FB4A;FBAV/222.0.0.86;FBBV/743183552;FBDM/{density=1.6409880251315052,width=945,height=1534};FBLC/en_GB;FBRV/783494603;FBCR/Axiata;FBMF/SM-N770F;FBBD/SM-N770F;FBPN/com.facebook.lite;FBDV/SM-N770F Reno 3;FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
+   #    ua = f'Dalvik/2.1.0 (Linux; U; Android 10; SM-N770F Build/RP1A.411926.987) [FBAN/FB4A;FBAV/222.0.0.86;FBBV/743183552;FBDM/{density=1.6409880251315052,width=945,height=1534};FBLC/en_GB;FBRV/783494603;FBCR/Axiata;FBMF/SM-N770F;FBBD/SM-N770F;FBPN/com.facebook.lite;FBDV/SM-N770F Reno 3;FBSV/10;FBOP/1;FBCA/armeabi-v7a:armeabi;]'
       return ua
 #━━━━━━━━[ MOTO_Z_(10) for ind. ]━━━━━━━━#
 resrr = requests.get('https://github.com/afglion5/approval/blob/main/approval.txt').text
