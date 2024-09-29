@@ -555,6 +555,5 @@ def approval():
       approval()
   except Exception as error:
     print(error)
-if __name__=='__main__':
 		
 menu()
